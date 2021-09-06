@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        android:background="@color/textColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/verdeGuapo2"
+            >
+
+
+            <TextView
+                android:id="@+id/textView_valorar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/textView_valorar"
+                android:fontFamily="@font/junior"
+                android:inputType="text"
+                android:textColor="@color/textColor"
+                android:textSize="60dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@color/verdeGuapo2">
+
+            <TextView
+                android:id="@+id/textView_nombredehabitacion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/textView_nombredehabitacion"
+                android:inputType="text"
+                android:textColor="@color/textColor"
+                android:textSize="22dp"
+                android:fontFamily="@font/junior"
+                android:layout_marginTop="3dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="100dp">
+
+
+            <TextView
+                android:id="@+id/val_nombredehabitacion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/val_nombredehabitacion"
+                android:inputType="text"
+                android:textColor="@color/verdeGuapo2"
+                android:textSize="20dp"
+                android:fontFamily="@font/junior"
+                android:textAlignment="center"
+                android:background="@drawable/estiloedittext"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/verdeGuapo2">
+
+            <TextView
+                android:id="@+id/val_puntuacion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/val_puntuacion"
+                android:textColor="@color/textColor"
+                android:textSize="35dp"
+                android:fontFamily="@font/junior"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/estiloedittext"/>
+
+        </LinearLayout>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            style="@style/MyRatingBar"
+            android:theme="@style/RatingBar"
+            android:numStars="5"
+            android:id="@+id/estrellavaloracion"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+        </RatingBar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/verdeGuapo2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/val_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/val_descripcion"
+                android:textColor="@color/textColor"
+                android:textSize="35dp"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/junior"
+                android:background="@drawable/estiloedittext"/>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/descrip"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="@string/descrip"
+            android:textColor="@color/verdeGuapo2"
+            android:background="@drawable/estiloedittext">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button_valorar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_valorar"
+            android:fontFamily="@font/junior"
+            android:textSize="30dp"
+            android:background="@drawable/estilo_btn"
+            android:textColor="@color/textColor"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

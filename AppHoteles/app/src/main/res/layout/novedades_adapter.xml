@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/novedades_layout"
+    android:padding="10dp"
+    android:paddingLeft="20dp"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+
+
+                <ImageView
+                    android:id="@+id/imagenNovedad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:transitionName="tercera_transicion"
+                    app:srcCompat="@android:drawable/btn_dialog" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="@color/textColor"
+                android:id="@+id/nove_habitacion"
+                android:text="@string/nove_habitacion"
+                android:fontFamily="@font/paradoid"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/nove_precio"
+                android:fontFamily="@font/paradoid"
+                android:textColor="@color/textColor"
+                android:text="@string/nove_precio"
+                android:textSize="30dp"></TextView>
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="-280dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/nove_val"
+            android:textSize="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/paradoid"
+            android:textAlignment="center"
+            android:id="@+id/nove_val"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/colorHint"
+            >
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

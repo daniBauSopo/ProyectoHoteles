@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/habitacion_layout"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true"
+
+        >
+
+
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/foto_enseña"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@android:drawable/btn_dialog"
+            android:transitionName="transicion_primera"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+
+            <ImageView
+                android:id="@+id/filtro_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:layout_marginTop="-8dp"
+                app:srcCompat="@drawable/nodisponible"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/valoracionprimera"
+                    android:textSize="27dp"
+                    android:text="@string/valoracionprimera"
+                    android:textColor="@color/textCardView"
+                    android:fontFamily="@font/paradoid">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/hotel_adapter"
+                    android:fontFamily="@font/paradoid"
+                    android:textColor="@color/textCardView"
+                    android:text="@string/hotel_adapter"
+                    android:textSize="11dp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/nombre_adapter"
+                    android:layout_width="120dp"
+                    android:layout_height="23dp"
+                    android:text="@string/nom_adap"
+                    android:textSize="11dp"
+                    android:fontFamily="@font/paradoid"
+                    android:textColor="@color/textCardView"></TextView>
+
+
+                <TextView
+                    android:id="@+id/precio_adapter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/pre_adap"
+                    android:fontFamily="@font/paradoid"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/textCardView"></TextView>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>

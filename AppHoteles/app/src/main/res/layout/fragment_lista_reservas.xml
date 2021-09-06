@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaReservas">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/verdeGuapo2">
+
+        <RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radiogrupo">
+
+
+            <RadioButton
+                android:id="@+id/checkBox_aceptada"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/paradoid"
+                android:text="@string/checkBox_aceptada"
+                android:textColor="@color/textColor"
+                android:textSize="13dp"
+                android:inputType="textMultiLine"
+                android:buttonTint="@color/textColor"/>
+
+            <RadioButton
+            android:id="@+id/checkBox_rechazada"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:fontFamily="@font/paradoid"
+            android:textColor="@color/textColor"
+            android:textSize="11dp"
+                android:inputType="textMultiLine"
+            android:text="@string/checkBox_rechazada"
+                android:buttonTint="@color/textColor"/>
+
+        <RadioButton
+            android:id="@+id/checkBox3_interrogante"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/paradoid"
+            android:text="@string/porver"
+            android:textColor="@color/textColor"
+            android:textSize="16dp"
+            android:inputType="textMultiLine"
+            android:buttonTint="@color/textColor"/>
+
+            <RadioButton
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/textColor"
+                android:buttonTint="@color/textColor"
+                android:text="@string/terminada"
+                android:inputType="textMultiLine"
+                android:fontFamily="@font/paradoid"
+                android:id="@+id/terminada"
+                android:textSize="11dp"
+                >
+
+            </RadioButton>
+
+    </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lista_reservas"/>
+    </LinearLayout>
+
+</FrameLayout>

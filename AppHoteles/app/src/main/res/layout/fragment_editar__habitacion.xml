@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Editar_Habitacion">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/editar_nombreha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/editar_nombreha"
+                android:hint="Nombre"/>
+
+            <EditText
+                android:id="@+id/editar_precio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="@string/editar_precio"
+                android:hint="Precio"/>
+
+            <EditText
+                android:id="@+id/editar_nombrehotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/editar_nombrehotel"
+                android:hint="NombreHotel"/>
+
+            <Spinner
+                android:id="@+id/spinner_editarcategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/editar_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/editar_descripcion"
+                android:hint="editar_descripcion"/>
+
+            <Spinner
+                android:id="@+id/spinner_editardisponible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editar_longitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="@string/editar_longitud"
+                android:hint="Longitud"/>
+
+            <EditText
+                android:id="@+id/editar_latitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/editar_latitud"
+                android:hint="Latitud"/>
+
+            <ImageView
+                android:id="@+id/imageView_editarfo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@android:drawable/btn_dialog"
+                />
+
+            <RatingBar
+                android:id="@+id/editar_estrellas"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/modificar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modificar" />
+
+            <Button
+                android:id="@+id/cancelarmodi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelarmodi" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

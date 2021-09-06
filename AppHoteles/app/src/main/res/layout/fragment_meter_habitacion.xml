@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeterHabitacion">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/nombrehab"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:text="@string/nombre" />
+
+            <EditText
+                android:id="@+id/nombrehotel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/nombrehotel"
+                android:hint="Nombre Hotel"/>
+
+            <EditText
+                android:id="@+id/precio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Precio"
+                android:inputType="textPersonName"
+                android:text="@string/precio" />
+
+            <Spinner
+                android:id="@+id/categoria_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Descripcion"
+                android:inputType="textPersonName"
+                android:text="@string/descripcion" />
+
+            <Spinner
+                android:id="@+id/disponible_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:id="@+id/longitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/longitud"
+                android:hint="Longitud"/>
+
+            <EditText
+                android:id="@+id/latitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/latitud"
+                android:hint="Latitud"/>
+
+            <ImageView
+                android:id="@+id/foto_ingreso"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@android:drawable/btn_dialog" />
+
+            <RatingBar
+                android:id="@+id/ratingStar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/ingresarha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingreha" />
+
+            <Button
+                android:id="@+id/cancelarmeter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelarha" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

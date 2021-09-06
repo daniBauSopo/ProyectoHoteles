@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/habitacion_gridlayout"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/foto_enseña_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:transitionName="segunda_transicion"
+                app:srcCompat="@android:drawable/btn_dialog" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/paradoid"
+                        android:textSize="27dp"
+                        android:layout_marginRight="30dp"
+                        android:textColor="@color/colorHint"
+                        android:text="@string/valoracion_adapter_grid"
+                        android:id="@+id/valoracion_adapter_grid">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:text="@string/textodisponible"
+                        android:id="@+id/textodisponible"
+                        android:textColor="@color/colorHint"
+                        android:fontFamily="@font/paradoid">
+
+                    </TextView>
+
+
+
+
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/foto_enseña_grid"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/hotel_adapter_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hotel_adapter_grid"
+            android:fontFamily="@font/paradoid"
+            android:textSize="15dp"
+            android:textColor="@color/colorHint"></TextView>
+
+        <TextView
+            android:id="@+id/nombre_adapter_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hotel_adapter_grid"
+            android:fontFamily="@font/paradoid"
+            android:textSize="15dp"
+            android:layout_below="@+id/hotel_adapter_grid"
+            android:textColor="@color/colorHint"></TextView>
+
+        <TextView
+            android:id="@+id/precio_adapter_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/precio_adapter_grid"
+            android:fontFamily="@font/paradoid"
+            android:textSize="15dp"
+            android:layout_below="@+id/nombre_adapter_grid"
+            android:textColor="@color/colorHint"></TextView>
+
+
+    </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

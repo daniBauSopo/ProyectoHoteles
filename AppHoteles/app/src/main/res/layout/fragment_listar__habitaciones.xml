@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Listar_Habitaciones">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-15dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner1" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="165dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="10dp"
+                android:text="@string/algunas"
+                android:fontFamily="@font/paradoid"
+                android:inputType="text"
+                android:textSize="33dp"
+                android:id="@+id/algunas"></TextView>
+
+        </LinearLayout>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@color/verdeGuapo2"
+                android:orientation="vertical"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="195dp"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lista_habitaciones"
+                    android:padding="10dp"
+                    android:scrollbars="horizontal"
+                    android:orientation="horizontal">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:background="#0A000000"
+        android:layout_marginTop="420dp">
+
+        <TextView
+            android:id="@+id/todas_cat"
+            android:layout_width="200dp"
+            android:fontFamily="@font/paradoid"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:text="@string/todas_cat"
+            android:inputType="text"
+            android:layout_marginTop="-4dp"
+            android:textColor="@color/verdeGuapo2"
+            android:textSize="33dp"></TextView>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="460dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:id="@+id/lista_categorias"
+            android:padding="10dp"
+            android:scrollbars="horizontal"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="650dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/novedades"
+                android:inputType="text"
+                android:textSize="33dp"
+                android:fontFamily="@font/paradoid"
+                android:textColor="@color/verdeGuapo2"
+                android:id="@+id/novedades">
+
+            </TextView>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@color/verdeGuapo2"
+        android:layout_marginTop="700dp"
+        android:elevation="50dp"
+        android:clipToPadding="false"
+        android:outlineProvider="paddedBounds">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_novedades"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1010dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ultimasval"
+                android:textSize="33dp"
+                android:inputType="text"
+                android:fontFamily="@font/paradoid"
+                android:textColor="@color/verdeGuapo2"
+                android:text="@string/ultimasval">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="1060dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rv_ultimas_novedades"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>

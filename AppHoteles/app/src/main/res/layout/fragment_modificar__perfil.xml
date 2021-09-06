@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Modificar_Perfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/verdeGuapo2">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="700dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/fot_perfil"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="150dp"
+                android:background="@color/verdeGuapo2">
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_modificar_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/modificar_nombre"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:hint="Nombre"
+                    android:fontFamily="@font/paradoid"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/estiloedittext"
+                    android:maxLength="20"
+                    android:text="@string/modificar_nombre"
+                    android:textAlignment="center"
+                    android:textColor="@color/verdeGuapo2">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_modificar_contraseña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="280dp"
+                android:layout_marginLeft="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/modificar_contrasena"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:hint="Contraseña"
+                    android:inputType="textPersonName"
+                    android:fontFamily="@font/paradoid"
+                    android:background="@drawable/estiloedittext"
+                    android:maxLength="20"
+                    android:text="@string/modificar_contrasena"
+                    android:textAlignment="center"
+                    android:textColor="@color/verdeGuapo2">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_modificar_telefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/estiloedittext"
+                android:layout_marginTop="360dp"
+                android:layout_marginLeft="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/modificar_telefono"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:fontFamily="@font/paradoid"
+                    android:hint="Telefono"
+                    android:inputType="phone"
+                    android:maxLength="9"
+                    android:background="@drawable/estiloedittext"
+                    android:text="@string/modificar_telefono"
+                    android:textAlignment="center"
+                    android:textColor="@color/verdeGuapo2">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_modificar_direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="440dp"
+                android:layout_marginLeft="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/modificar_direccion"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:fontFamily="@font/paradoid"
+                    android:ems="10"
+                    android:hint="Direccion(Opcional)"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/estiloedittext"
+                    android:maxLength="20"
+                    android:text="@string/modificar_direccion"
+                    android:textAlignment="center"
+                    android:textColor="@color/verdeGuapo2">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="530dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginRight="200dp"
+                android:background="@color/verdeGuapo2">
+
+
+                <Button
+                    android:id="@+id/confirmar_modificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/paradoid"
+                    android:text="@string/confirmar_modificar"
+                    android:textColor="@color/textColor"
+                    android:background="@color/verdeGuapo2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="530dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="190dp"
+                android:background="@color/verdeGuapo2">
+
+
+                <Button
+                    android:id="@+id/salir_modificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/paradoid"
+                    android:text="@string/salir_modificar"
+                    android:textColor="@color/textColor"
+                    android:background="@color/verdeGuapo2"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</FrameLayout>

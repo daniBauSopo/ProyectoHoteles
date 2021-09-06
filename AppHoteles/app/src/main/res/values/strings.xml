@@ -1,0 +1,215 @@
+<resources>
+    <string name="app_name">Hoteles</string>
+
+    <!--    MAIN ACTIVITY-->
+    <string name="inicioSesion">Iniciar Sesion</string>
+    <string name="registro">Registrarse</string>
+
+    <!--    FRAGMENT LOGIN-->
+    <string name="correo_inicio"></string>
+    <string name="contraseña_inicio"></string>
+    <string name="login">login</string>
+
+    <!--    FRAGMENT REGISTRO-->
+    <string name="nickname"></string>
+    <string name="correo_registro"></string>
+    <string name="telefono"></string>
+    <string name="contraseña_registro"></string>
+    <string name="contraseña_repeticion"></string>
+    <string name="boton_registrarse">Check In</string>
+
+    <!--    ACTIVITY ADMINISTRADOR-->
+    <string name="meterhabitacom">Meter habitacion</string>
+    <string name="verhabitacion">Habitaciones</string>
+    <string name="verclientes">Lista Clientes</string>
+    <string name="verreserva">Reservas</string>
+    <string name="catego">Meter Categorias</string>
+    <string name="salir">salir</string>
+
+    <!--        METER HABITACIONES-->
+
+    <string name="nombre"></string>
+    <string name="precio"></string>
+    <string name="descripcion"></string>
+    <string name="longitud"></string>
+    <string name="latitud"></string>
+    <string name="ingreha">Ingresar</string>
+    <string name="cancelarha">Cancelar</string>
+    <string name="nombrehotel"></string>
+
+    <!--   INGRESAR CATEGORIA-->
+    <string name="metercatego"></string>
+    <string name="ingrecat">Ingresar</string>
+    <string name="cancel">cancelar</string>
+
+    <!--    LISTAR HABITACIONES-->
+    <string name="todas_cat">Categorias</string>
+    <string name="algunas">Algunas Habitaciones</string>
+    <string name="novedades">Novedades</string>
+    <string name="ultimasval">Ultimas Valoraciones</string>
+
+    <!--    HABITACION ADAPTER-->
+    <string name="nom_adap"></string>
+    <string name="pre_adap"></string>
+    <string name="hotel_adapter"></string>
+    <string name="valoracionprimera"></string>
+
+    <!--    CATEGORIA_ADAPTER-->
+    <string name="nombre_cate"></string>
+
+    <!--    CATEGORIA_GRID_ADAPTER-->
+    <string name="grid_nombre"></string>
+
+    <!--    EDITAR HABITACION-->
+    <string name="editar_nombreha"></string>
+    <string name="editar_precio"></string>
+    <string name="editar_descripcion"></string>
+    <string name="modificar">Modificar</string>
+    <string name="cancelarmodi">Cancelar</string>
+    <string name="editar_latitud"></string>
+    <string name="editar_longitud"></string>
+    <string name="editar_nombrehotel"></string>
+
+    <!--    HABITACIONADAPTER_ADMIN-->
+    <string name="nombre_adminadapter"></string>
+    <string name="precio_adminadapter"></string>
+    <string name="categoria_adminadapter"></string>
+
+    <!--    CLICK HABITACIONES-->
+    <string name="nombre_info"></string>
+    <string name="descripcion_info"></string>
+    <string name="precio_info"></string>
+    <string name="categoria_info"></string>
+    <string name="dispo_info"></string>
+    <string name="valoracion_inf">Valoracion</string>
+    <string name="textView_nombre">Habitacion</string>
+    <string name="textView_descripcion">Descripcion</string>
+    <string name="textView_precio">Precio</string>
+    <string name="textView_categoria">Categoria</string>
+    <string name="textView_estrellas">Estrellas</string>
+    <string name="textView_disponible">Disponibilidad</string>
+    <string name="textView_localizacion">Localizacion</string>
+    <string name="reservar">Reservar</string>
+    <string name="salir_click">salir</string>
+    <string name="textView_dias">Fecha Reserva</string>
+    <string name="texto_valoracion"></string>
+    <string name="entrada"></string>
+    <string name="salida"></string>
+    <string name="textView_hotel">Hotel</string>
+    <string name="hotel_info"></string>
+
+
+    <!--    PERFIL_USUARIO-->
+    <string name="textView_nombre_usuario">Username</string>
+    <string name="nombre_usuario"></string>
+    <string name="textView_correo_usuario">Correo</string>
+    <string name="correo_usuario"></string>
+    <string name="textView_telefono_usuario">Telefono</string>
+    <string name="telefono_usuario"></string>
+    <string name="textView_direccion_usuario">Direccion</string>
+    <string name="direccion_usuario"></string>
+    <string name="textView_fecha_usuario">Desde</string>
+    <string name="fecha_usuario"></string>
+    <string name="modificar_perfil">Modificar Perfil</string>
+    <string name="salir_perfil">Salir</string>
+    <string name="textView_valoraciones_usuario">Tus Valoraciones</string>
+
+    <!--    FRAGMENT_ADMIN_RESERVA-->
+    <string name="info_clinom">Nombre del Cliente</string>
+    <string name="nombredelcliente">Cliente</string>
+    <string name="info_habinom">Nombre Habitacion</string>
+    <string name="nombredehabitacion">Habitacion</string>
+    <string name="info_fecha">Fecha de Reserva</string>
+    <string name="fechadereserva">FechaR</string>
+    <string name="info_fechaentrada">Fecha de Entrada</string>
+    <string name="fechadeentrada">Entrada</string>
+    <string name="info_fechasalida">Fecha de Salida</string>
+    <string name="fechadesalida">Salida</string>
+    <string name="pasaraceptado">Aceptar Reserva</string>
+    <string name="pasarechazado">Rechazar Reserva</string>
+    <string name="salir_adminreserva">Salir</string>
+
+    <!--   MODIFICAR_PERFIL_USUARIO-->
+    <string name="modificar_nombre"></string>
+    <string name="modificar_telefono"></string>
+    <string name="modificar_contrasena"></string>
+    <string name="modificar_direccion"></string>
+    <string name="confirmar_modificar">Confirmar</string>
+    <string name="salir_modificar">Salir</string>
+
+    <!--    FRAGMENT_LISTA_RESERVAS-->
+    <string name="checkBox_aceptada">Reservas Aceptadas</string>
+    <string name="checkBox_rechazada">Reservas Rechazadas</string>
+    <string name="porver">Sin Asignar</string>
+    <string name="terminada">Terminadas</string>
+
+    <!--    RESERVADAPTER-->
+    <string name="textView5_nombrehabitacion">Habitacion</string>
+    <string name="textView6_fechareserva">Fecha</string>
+    <string name="textView3_hab"></string>
+    <string name="textView4_da"></string>
+    <string name="textView7_preciototal">Precio Total</string>
+    <string name="textView8_preTotal"></string>
+
+    <!--    DIALOG_VALORAR-->
+    <string name="textView_valorar">VALORACION</string>
+    <string name="textView_nombredehabitacion">Habitacion</string>
+    <string name="val_nombredehabitacion"></string>
+    <string name="val_puntuacion">Puntuacion</string>
+    <string name="val_descripcion">Descripcion</string>
+    <string name="descrip"></string>
+    <string name="button_valorar">Valorar</string>
+
+    <!--    FILTRO_HABITACIONES-->
+    <string name="totalhabitaciones"></string>
+    <string name="ordenarporestrellas">Estrellas</string>
+    <string name="unaestrella">1estrella</string>
+    <string name="dosestrella">2estrella</string>
+    <string name="tresestrella">3estrella</string>
+    <string name="cuatroestrella">4estrella</string>
+    <string name="cincoestrella">5estrella</string>
+    <string name="ordenarporprecio">Ordenar por precio</string>
+
+    <!--    VALORACION_ADAPTER-->
+    <string name="val_opinion"></string>
+    <string name="val_fecha"></string>
+    <string name="val_nomha"></string>
+    <string name="val_nomcli"></string>
+
+    <!--    NOVEDADES_ADAPTER-->
+    <string name="nove_val"></string>
+    <string name="nove_precio"></string>
+    <string name="nove_habitacion"></string>
+
+    <!--    GRID_HABITACION_ADAPTER-->
+    <string name="hotel_adapter_grid"></string>
+    <string name="nombre_adapter_grid"></string>
+    <string name="precio_adapter_grid"></string>
+    <string name="valoracion_adapter_grid"></string>
+    <string name="textodisponible"></string>
+
+    <!--    ULTIMAS_VALORACIONES-->
+    <string name="valoracion_ultima"></string>
+    <string name="ultimadescripcion"></string>
+
+    <!--    GRID2_HABITACION_ADAPTER-->
+    <string name="grid2_hotel"></string>
+    <string name="grid2_habitacion"></string>
+    <string name="grid2_precio"></string>
+
+
+    <!--    CLIENTE_ITEM-->
+
+    <string name="nombre_de_ususario"></string>
+    <string name="correo_de_usuario"></string>
+    <string name="fecha_de_usuario"></string>
+    <string name="telefono_de_usuario"></string>
+    <string name="direccion_de_usuario"></string>
+    <string name="banear">ban</string>
+    <string name="liberar">Freedom</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:id="@+id/fragHome"
+        android:icon="@drawable/home"
+        android:fontFamily="@font/paradoid"></item>
+
+
+    <item
+        android:title="Categorias"
+        android:icon="@drawable/categoria"
+        android:id="@+id/fragCategoria"
+        android:fontFamily="@font/paradoid"></item>
+
+    <item
+        android:title="Perfil"
+        android:icon="@drawable/camarero"
+        android:id="@+id/fragPerfil"
+        android:fontFamily="@font/paradoid"></item>
+
+
+
+    <item
+        android:title="Reservas"
+        android:icon="@drawable/reserva"
+        android:id="@+id/fragReserva"
+        android:fontFamily="@font/paradoid"></item>
+
+</menu>

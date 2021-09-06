@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Filtrar por estrellas">
+
+        <menu>
+
+            <item
+                android:id="@+id/naigation_esrellas"
+                android:icon="@drawable/ic_star"
+                android:title="Estrellas"
+                app:actionLayout="@layout/spinner_estrellas">
+            </item>
+        </menu>
+
+    </item>
+
+    <item android:title="Filtrar por precio">
+
+        <menu>
+
+            <item
+                android:id="@+id/mascaro"
+                android:icon="@drawable/ic_caro"
+                android:title="Mas Caro">
+            </item>
+
+            <item
+                android:id="@+id/masbarato"
+                android:icon="@drawable/ic_barato"
+                android:title="Mas Barato">
+
+            </item>
+
+        </menu>
+
+    </item>
+
+
+
+</menu>

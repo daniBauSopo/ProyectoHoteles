@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClickHabitacion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/imagenClik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/btn_dialog"
+            android:transitionName="transicion_primera"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="300dp"
+        android:background="#0A000000"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="5dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="90dp"
+            android:id="@+id/scrollviewclick">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:cardCornerRadius="2dp"
+                android:layout_marginLeft="2dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                android:id="@+id/cardviewAnimada">
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:background="@color/verdeGuapo2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:textSize="20dp"
+                        android:inputType="text"
+                        android:fontFamily="@font/paradoid"
+                        android:text="@string/textView_nombre"
+                        android:textColor="@color/textColor"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/nombre_info"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:ems="10"
+                    android:textSize="17dp"
+                    android:inputType="text"
+                    android:fontFamily="@font/paradoid"
+                    android:textColor="@color/verdeGuapo2"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="@string/nombre_info">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:background="@color/verdeGuapo2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="62dp">
+
+                    <TextView
+                        android:id="@+id/textView_hotel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/paradoid"
+                        android:textSize="20dp"
+                        android:inputType="text"
+                        android:text="@string/textView_hotel"
+                        android:textColor="@color/textColor"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/hotel_info"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:ems="10"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/paradoid"
+                    android:inputType="text"
+                    android:textColor="@color/verdeGuapo2"
+                    android:textAlignment="center"
+                    android:layout_marginTop="62dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="@string/hotel_info">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:background="@color/verdeGuapo2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="120dp">
+
+                    <TextView
+                        android:id="@+id/textView_descripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textSize="19dp"
+                        android:fontFamily="@font/paradoid"
+                        android:text="@string/textView_descripcion"
+                        android:textColor="@color/textColor"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/paradoid"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/verdeGuapo2"
+                    android:layout_marginTop="110dp"
+                    android:id="@+id/descripcion_info"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="130dp"
+                    android:text="@string/descripcion_info"
+                    >
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:background="@color/verdeGuapo2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="175dp">
+
+                    <TextView
+                        android:id="@+id/textView_precio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/paradoid"
+                        android:inputType="text"
+                        android:textSize="20dp"
+                        android:textColor="@color/textColor"
+                        android:text="@string/textView_precio"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/precio_info"
+                    android:ems="10"
+                    android:fontFamily="@font/paradoid"
+                    android:textSize="20dp"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/verdeGuapo2"
+                    android:layout_marginTop="175dp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="130dp"
+                    android:text="@string/precio_info">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:background="@color/verdeGuapo2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="220dp">
+
+                    <TextView
+                        android:id="@+id/textView_categoria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/paradoid"
+                        android:inputType="text"
+                        android:textSize="20dp"
+                        android:textColor="@color/textColor"
+                        android:text="@string/textView_categoria"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/categoria_info"
+                    android:ems="10"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:textColor="@color/verdeGuapo2"
+                    android:layout_marginTop="220dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/paradoid"
+                    android:layout_marginLeft="130dp"
+                    android:text="@string/categoria_info">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:background="@color/verdeGuapo2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="270dp">
+
+                    <TextView
+                        android:id="@+id/textView_estrellas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"
+                        android:inputType="text"
+                        android:fontFamily="@font/paradoid"
+                        android:text="@string/textView_estrellas"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:isIndicator="true"
+                    android:theme="@style/RatingBar"
+                    android:numStars="5"
+                    android:layout_marginTop="260dp"
+                    android:layout_marginLeft="130dp"
+                    android:id="@+id/mirarEstre">
+                </RatingBar>
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@color/verdeGuapo2"
+                    android:layout_marginTop="320dp">
+
+                    <TextView
+                        android:id="@+id/textView_disponible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/textColor"
+                        android:fontFamily="@font/paradoid"
+                        android:inputType="text"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textView_disponible"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/dispo_info"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/paradoid"
+                    android:inputType="text"
+                    android:textColor="@color/verdeGuapo2"
+                    android:textAlignment="center"
+                    android:layout_marginTop="320dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="@string/dispo_info">
+
+                </TextView>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/verdeGuapo2"
+                    android:layout_marginTop="360dp">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:id="@+id/valoracion_inf"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/paradoid"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:text="@string/valoracion_inf">
+
+            </TextView>
+
+    </LinearLayout>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginLeft="70dp"
+                android:textColor="@color/verdeGuapo2"
+                android:textSize="80dp"
+                android:text="@string/texto_valoracion"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/paradoid"
+                android:textAlignment="center"
+                android:id="@+id/texto_valoracion">
+
+            </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/verdeGuapo2"
+                    android:layout_marginTop="530dp">
+
+                    <TextView
+                        android:id="@+id/textView_localizacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/paradoid"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"
+                        android:inputType="text"
+                        android:text="@string/textView_localizacion"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_marginTop="560dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/verdeGuapo2"
+                    android:layout_marginTop="750dp">
+
+                    <TextView
+                        android:id="@+id/textView_dias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/textColor"
+                        android:fontFamily="@font/paradoid"
+                        android:textSize="20dp"
+                        android:inputType="text"
+                        android:text="@string/textView_dias"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="790dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_entrada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        style="@style/AppTextField">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/entrada"
+                            android:layout_width="300dp"
+                            android:layout_height="60dp"
+                            android:ems="10"
+                            android:hint="Fecha de entrada"
+                            android:fontFamily="@font/paradoid"
+                            android:inputType="date"
+                            android:background="@drawable/estiloedittext"
+                            android:text="@string/entrada"
+                            android:textAlignment="center"
+                            android:textColor="@color/verdeGuapo2"
+                            android:textColorHint="@color/colorHint">
+                            <!--                  android:drawableLeft=""-->
+
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_salida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        style="@style/AppTextField">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/salida"
+                            android:layout_width="300dp"
+                            android:layout_height="60dp"
+                            android:ems="10"
+                            android:hint="Fecha de salida"
+                            android:fontFamily="@font/paradoid"
+                            android:inputType="date"
+                            android:background="@drawable/estiloedittext"
+                            android:text="@string/salida"
+                            android:textAlignment="center"
+                            android:textColor="@color/verdeGuapo2"
+                            android:textColorHint="@color/colorHint">
+                            <!--                  android:drawableLeft=""-->
+
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="310dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginTop="750dp">-->
+
+<!--                    <sun.bob.mcalendarview.MCalendarView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="310dp"-->
+<!--                        android:id="@+id/calendario_click">-->
+
+<!--                    </sun.bob.mcalendarview.MCalendarView>-->
+
+<!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="1000dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginRight="200dp"
+                    android:background="@color/verdeGuapo2">
+
+                    <Button
+                        android:id="@+id/reservar"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reservar"
+                        android:textColor="@color/textColor"
+                        android:fontFamily="@font/paradoid"
+                        android:background="@color/verdeGuapo2"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="1000dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="200dp"
+                    android:background="@color/verdeGuapo2">
+
+                    <Button
+                        android:id="@+id/salir_click"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/paradoid"
+                        android:text="@string/salir_click"
+                        android:textColor="@color/textColor"
+                        android:background="@color/verdeGuapo2"
+                        />
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

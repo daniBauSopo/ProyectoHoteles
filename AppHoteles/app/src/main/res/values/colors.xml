@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorHint">#000000</color>
+    <color name="textColor">#ffffff</color>
+    <color name="starColor">#8057aeb2</color>
+    <color name="endColor">#80E9E9E9</color>
+    <color name="verdeGuapo2">#06578f</color>
+    <color name="verdeGuapo1">#63a5e2</color>
+    <color name="verdeFondo">#B0ECD9</color>
+    <color name="textCardView">#ffffff</color>
+    <color name="yellow">#EDFF00</color>
+
+</resources>

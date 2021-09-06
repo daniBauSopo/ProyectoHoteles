@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminVerReserva">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/info_clinom"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/info_clinom"
+                    android:textColor="@color/colorHint"
+                    android:textSize="19dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nombredelcliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombredelcliente"
+                android:textColor="@color/colorHint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/info_habinom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="@string/info_habinom"
+                    android:textColor="@color/colorHint"
+                    android:textAlignment="center"
+                    android:textSize="19dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nombredehabitacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombredehabitacion"
+                android:textColor="@color/colorHint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/info_fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="@string/info_fecha"
+                    android:textColor="@color/colorHint"
+                    android:textAlignment="center"
+                    android:textSize="19dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fechadereserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fechadereserva"
+                android:textColor="@color/colorHint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/info_fechaentrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="@string/info_fechaentrada"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorHint"
+                    android:textSize="19dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fechadeentrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fechadeentrada"
+                android:textColor="@color/colorHint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/info_fechasalida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="@string/info_fechasalida"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorHint"
+                    android:textSize="19dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fechadesalida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fechadesalida"
+                android:textColor="@color/colorHint"/>
+
+            <Button
+                android:id="@+id/pasaraceptado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pasaraceptado" />
+
+            <Button
+                android:id="@+id/pasarechazado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pasarechazado" />
+
+            <Button
+                android:id="@+id/salir_adminreserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/salir_adminreserva" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
